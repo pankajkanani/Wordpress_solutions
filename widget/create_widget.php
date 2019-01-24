@@ -25,7 +25,7 @@ register_sidebar( array(
 add_action( 'widgets_init', 'wpb_widgets_init' );
 
 ?>
- <!--  we have registered two sidebars. We set them names and descriptions to identify them on Widgets screen. The description parameter can be used to tell users where this sidebar appears in the theme. The wpb is the name of the theme we are working on, it is used here to make these strings translatable. You should replace it with your theme name. -->
+ <!-- In above code, we have registered two sidebars. We set them names and descriptions to identify them on Widgets screen. The description parameter can be used to tell users where this sidebar appears in the theme. The wpb is the name of the theme we are working on, it is used here to make these strings translatable. You should replace it with your theme name. -->
  
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 <div id="secondary" class="widget-area" role="complementary">
