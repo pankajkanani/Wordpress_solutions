@@ -1,0 +1,1 @@
+mysql -u root -p new_gorilla <'/home/ctpl200/Downloads/database_name.sql'
