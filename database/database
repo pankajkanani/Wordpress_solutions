@@ -1,1 +1,3 @@
+Add database by using CMD file whem database is large
+
 mysql -u root -p database_name <'/home/ctpl200/Downloads/database_name.sql'
