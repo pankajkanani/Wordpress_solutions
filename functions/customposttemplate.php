@@ -36,8 +36,27 @@ get_header(); ?>
 									the_title();
 									the_content();
 								endwhile; 
-							endif;
-						?>
+							
+						
+								global $wp_query;
+								$award_big = 999999999; // need an unlikely integer
+								echo paginate_links( array(
+									'base' => str_replace( $award_big, '%#%', esc_url( get_pagenum_link( $award_big ) ) ),
+									'format' => '?paged=%#%',
+									'current' => max( 1, get_query_var('paged') ),
+									'total' => $wp_query->max_num_pages,
+									'prev_next'          => true,
+									'prev_text'          => __('<span class="class="prev_text"><i class="fa fa-caret-left" aria-hidden="true"></i></span>'),
+									'next_text'          => __('<span class="next_text"><i class="fa fa-caret-right" aria-hidden="true"></i></span>'),
+
+								) );
+					
+				
+					 		else : ?>
+								<p>Post not found</p>
+							
+								<?php 
+							endif; ?>
 					</div>
 
 				</main><!-- #main -->
