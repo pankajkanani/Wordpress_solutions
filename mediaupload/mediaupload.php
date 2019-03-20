@@ -1,3 +1,5 @@
+<?php
+
 // Add this javascript in js file and change the button id and source id
 jQuery(document).ready(function($){
 	jQuery('#fileupload_8 input:file').click(function(e){
@@ -27,3 +29,4 @@ add_action('wp_enqueue_scripts', 'qouterequest_admin_scripts');
 
 
 
+?>
