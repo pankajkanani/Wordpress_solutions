@@ -1,4 +1,11 @@
-<?php 
-mail('pankaj.cmarix@gmail.com', 'the subject', 'the message', null, 
-   'pankaj.cmarix@gmail.com); 
-?>  
+<?php
+$to = "pankaj.cmarix@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: pankaj.cmarix@gmail.com" . "\r\n";
+
+
+mail($to,$subject,$txt,$headers);
+echo "test";
+?>
+
