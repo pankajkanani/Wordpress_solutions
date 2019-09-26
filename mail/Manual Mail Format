@@ -1,0 +1,48 @@
+<?php
+
+if($img_src != ""){
+	$topcontent = '<p style="margin-top:0;margin-bottom:0;"><img src="'.$img_src.'" alt="Bevel Logo" style="max-width: 100%;" /></p>';
+}else{
+	$topcontent = $img_src;
+}
+
+$message = '<table style="background-color: #eee; padding: 70px 0;" height="100%" width="100%">
+    <tr>
+        <td align="center" valign="top">
+            <table style="max-width: 600px; width: 100%; border: 1px solid #ddd; border-spacing: 0;" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <div id="template_header_image" style=" background: #000000; margin: 0 auto; text-align: left;">'.$topcontent.'</div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    <tr>
+    <tr>
+        <td align="center" valign="top">
+            <table style="background-color: #fff; max-width: 600px; width: 100%; border: 1px solid #ddd; border-spacing: 0;" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td style="padding: 48px 48px 0; color: #474747; font-size: 16px; font-family: Arial;">
+                            <div><p>Your transactions has been completed, Thank you!</p></div>
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<div><p>Here is a summery of your transaction:</p></div>
+										<table width="100%" style="border-collapse:collapse; margin-bottom: 30px;" cellpadding="5" cellspacing="5">'.$tabledata.'</table>
+									</td>
+								</tr>
+							</table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>';
+
+?>
